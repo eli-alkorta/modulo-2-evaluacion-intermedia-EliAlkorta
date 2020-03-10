@@ -18,7 +18,11 @@ console.log(randomNumber);
 
 function compareNumbers() {
 
-    if  (chosenNumber.value > randomNumber) {
+    if (chosenNumber.value > 100 || chosenNumber.value < 0) {
+
+        tip.value = "No está entre 1 y 100"
+
+    } else if  (chosenNumber.value > randomNumber) {
 
         tip.value = 'Demasiado alto'
 
@@ -30,10 +34,8 @@ function compareNumbers() {
 
         tip.value = "¡Has ganado campeona!"
 
-    } else if (chosenNumber.value > 100 && chosenNumber.value < 0) {
-
-        tip.value = "El número debe estar entre 1 y 100"
     }
+    
 }
 
 function addAttempts() {
