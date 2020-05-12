@@ -5,10 +5,13 @@ const button = document.querySelector(".button");
 const tip = document.querySelector("#tip");
 const attempts = document.querySelector("#attempts");
 
+tip.innerHTML= "Pista: Escribe el número y dale a Prueba";
+attempts.innerHTML="Número de intentos: 0";
+
 let numberOfAttempts = 0;
 
 function getRandomNumber(max) {
-  return Math.round(Math.random() * max);
+  return Math.ceil(Math.random() * max);
 }
 const randomNumber = getRandomNumber(100);
 
@@ -21,19 +24,19 @@ function buttonHandler() {
 
 function compareNumbers() {
   if (chosenNumber.value > 100 || chosenNumber.value < 0) {
-    tip.value = "No está entre 1 y 100";
+    tip.innerHTML = "Pista: No está entre 1 y 100";
   } else if (chosenNumber.value > randomNumber) {
-    tip.value = "Demasiado alto";
+    tip.innerHTML = "Pista: Demasiado alto";
   } else if (chosenNumber.value < randomNumber) {
-    tip.value = "Demasiado bajo";
+    tip.innerHTML= "Pista: Demasiado bajo";
   } else {
-    tip.value = "¡Has ganado campeona!";
+    tip.innerHTML = "Pista: ¡Has ganado campeona!";
   }
 }
 
 function addAttempts() {
   if ("click") {
-    attempts.value = numberOfAttempts += 1;
+    attempts.innerHTML = `Número de intentos: ${numberOfAttempts += 1}`;
   }
 }
 

@@ -1,0 +1,40 @@
+h1{
+    font-size: 60px;
+    argin-left: 20px;
+    font-family: "roboto";
+}
+p{
+    font-family: "roboto";
+    margin-left: 20px;
+    font-size: 22px;   
+}
+#chosen-number{
+    margin-left: 110px;
+    margin-bottom: 20px;
+    width: 50px;
+    border-radius: 7%;
+    background: gray;
+    color: white;
+    text-align: center;
+}
+.button{
+    margin-left: 104px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    padding: 3px;
+    background: blue;
+    color: white;
+    font-family: "roboto";
+    font-size: 18px;
+}
+.tip{
+    font-family: "roboto";
+    margin-left: 20px;
+    font-size: 18px;
+}
+.attempts{
+    font-family: "roboto";
+    margin-left: 20px;
+    font-size: 18px;
+
+}

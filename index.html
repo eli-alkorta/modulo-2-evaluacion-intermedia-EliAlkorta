@@ -3,28 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Adivina el número</title>
   </head>
   <body>
     <main>
       <h1>Adivina el número</h1>
-      <form>
         <p>Introduce aquí tu número:</p>
         <input type="number" name="chosen-number" id="chosen-number" /><br />
         <button type="button" class="button">Prueba</button><br />
-        <input
-          type="text"
-          name="tip"
+        <div
+          class="tip"
           id="tip"
-          placeholder="Pista: Escribe el número y dale a Prueba"
-        /><br />
-        <input
-          type="number"
-          name="attempts"
+         ></div><br />
+        <div     
+          class="attempts"
           id="attempts"
-          placeholder="Número de intentos: 0"
-        />
-      </form>
+         ></div>
     </main>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
